@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <h3>Ciudades <span><a  class="btn btn-success btn-editcid" class="" data-id="-1" >Nuevo</a></span></h3>
+    <div class="container">
+        <div id="datosCiudades">
+        </div>
+        <div id="formCiudades">
+        <h3>Ciudad</h3>
+        <form class="" action="index.php" method="post">
+                <input id="idx" type="hidden" name="idx" value="">  <br>
+                <label for="ciudad">Ciudad</label><br>
+                <input id="ciudad" type="text" class="form-control"  name="ciudad" value=""><br>
+                <button type="button"  class="btn btn-primary" id="sendFormCiudad" >Enviar</button><a  class="btn btn-secondary" id="cancelFormCiudad" >volver</a>
+        </form>
+        </div> 
+
+    </div>
+    <script  src="../node_modules/jquery/dist/jquery.js" ></script>
+   <script src="js/ciudades.app.js" ></script>
+   <script src="js/ciudades.ui.js"></script> 
+
+</body>
+</html>

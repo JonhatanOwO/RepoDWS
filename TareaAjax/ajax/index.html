@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tarea reloca - pero en Ajax!</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../libs/estilo.css">
+
+  </head>
+  <body >
+    <nav class="navbar navbar-light bg-indigo shadow" style="background-color:#DAF7A6; padding: 30px;">
+    <h2>Tarea reloca - pero en Ajax!</h2>
+      <p class="form-inline">
+        <a class="btn btn-outline-success" id="ciudadesList" >Ciudades</a>
+        <a class="btn btn-outline-success" id="personasList">Personas</a>
+      </p>
+    </nav>
+    <div class="container" style="background-color:#F8F9F9;">
+      <br>
+    <!-- formulario de personas -->
+    <div class="container" id="datosPersonas">
+      <a id='btNuevo'class='btn btn-success ' >Nuevo</a>
+    </div>
+    
+    <!-- formulario de personas -->
+    
+    <div id="formPersonas">
+      <form class="container">
+      <!-- Name input -->
+      <div class="form-outline mb-4">
+        <input type="hidden" id="id" class="form-control" />
+        <input type="text" id="cin" class="form-control" />
+        <label class="form-label" for="form4Example1">Nro de documento</label>
+      </div>
+    
+      <!-- Email input -->
+      <div class="form-outline mb-4">
+        <input type="text" id="apellido" class="form-control" />
+        <label class="form-label" for="form4Example2">Apellidos</label>
+      </div>
+    
+      <!-- Message input -->
+      <div class="form-outline mb-4">
+        <input type="text" id="nombre" class="form-control" />
+        <label class="form-label" for="form4Example3">Nombres</label>
+      </div>
+
+      <div class="form-outline mb-4">
+        <input type="text" id="email" class="form-control" />
+        <label class="form-label" for="form4Example2">Email</label>
+      </div>
+    
+      <!-- Checkbox -->
+      <div class="form-outline mb-4">
+        <input type="date" id="fenac" class="form-control" data-date-format="DD/MMM/YYY"/>
+        <label class="form-label" for="form4Example3">Fecha de Nacimiento</label>
+      </div>
+    
+      <div class="form-outline mb-4">
+        <select class="form-select" name="ciudad_id" id="ciudades_id_personas">
+    
+        </select>
+        <label class="form-label" for="form4Example3">Ciudad</label>
+      </div>
+    
+      <!-- Submit button -->
+      <button type="button"  class="btn btn-primary" id="sendFormPersonas" >Enviar</button><a  class="btn btn-secondary" id="cancelFormPersonas" >volver</a>
+    </form>
+    
+    </div>
+    <!-- formulario de ciudades -->
+    
+    <div class="container">
+        <div id="datosCiudades">
+        </div>
+    </div>
+    <!-- datos de ciudades -->
+    <div id="formCiudades">
+    <h3>Ciudad</h3>
+    <form class="" action="index.php" method="post">
+            <input id="idx" type="hidden" name="idx" value="">  <br>
+            <label for="ciudad">Ciudad</label><br>
+            <input id="ciudad" type="text" class="form-control"  name="ciudad" value=""><br>
+            <button type="button"  class="btn btn-primary" id="sendFormCiudad" >Enviar</button><a  class="btn btn-secondary" id="cancelFormCiudad" >volver</a>
+    </form>
+    </div>
+  </div>
+
+<script  src="../jquery-3.6.0.min.js" ></script>
+<script src="js/app.js" ></script>
+<script src="js/ciudades.app.js" ></script>
+<script src="js/ciudades.ui.js"></script>
+<script src="js/personas.app.js" ></script>
+<script src="js/personas.ui.js"></script>
+
+  </body>
+</html>
